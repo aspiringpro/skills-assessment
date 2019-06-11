@@ -84,7 +84,7 @@ const loadWidget = () => {
   };
 
   document.onclick = (e) => {
-    if (event.target.className !== "contact-name") {
+    if (e.target.className !== "contact-name") {
       displayContacts(selectChoice());
     } else {
       displayContacts(parseInt(e.target.id));
